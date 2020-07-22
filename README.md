@@ -4,7 +4,7 @@ A collection of profile pages for all interns who've passed through the Microsof
 * Project Requirements...
 - HTML5, CSS3 & JavaScript
 - Do a single page,profile page. 
-- For images ensure to store it in the image folder, name the image with your name
+- For images ensure to store in the image folder, name the image with your name
 - name the html markup file with your name too, in case you share names, use a unique one
 - Javascript and Css code, should be inline i.e you not going to create a separate file for them for simplicity reasons(Poor design but serves us best for a start.)
 
