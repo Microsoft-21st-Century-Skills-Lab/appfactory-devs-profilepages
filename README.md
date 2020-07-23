@@ -1,14 +1,14 @@
 # appfactory-devs-profilepages
 A collection of profile pages for all interns who've passed through the Microsoft Labs, USIU-Africa.
 
-** Project Requirements...
+**Project Requirements...
 [-] HTML5, CSS3 & JavaScript
 [-] Do a single page,profile page. 
-[-] For images ensure to store it in the image folder, name the image with your name
+[-] For images ensure to store them in the image folder, name the image with your name
 [-] name the html markup file with your name too, in case you share names, use a unique one
 [-] Javascript and Css code, should be inline i.e you not going to create a separate file for them for simplicity reasons(Poor design but serves us best for a start.)
 
-* How to start
+*How to start
 [-] Assuming you familiar with git and you already have it set-up;
 [-] Clone the repo "appfactory-devs-profilepages" to your machine...
 [-] Create your html file and store it the profiles folder
@@ -19,7 +19,7 @@ A collection of profile pages for all interns who've passed through the Microsof
 [-] Don't forget to create a [Merge Request] so that I can review your work bofore merging merging with the rest.
 [-] When all is ready we shall go live, by publishing our work to heroku...
 
-* Remember:
+*Remember:
 [-] Do not copy paste code, build it from scractch
 [-] Ensure your page is well styled and has some interactivity
 [-] Your profile page should be device responsive...
@@ -27,4 +27,5 @@ A collection of profile pages for all interns who've passed through the Microsof
 [-] This is not all, the instruction and code will change frequently...
 Lets see what you got....
 
-** Happy Coding !!!
+**Happy Coding !!!
+
