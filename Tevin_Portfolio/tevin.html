@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tevin Mungai</title>
+        
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+
+            body {
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Montserrat", sans-serif;
+            }
+            
+            #page-container {
+            position: relative;
+            min-height: 100vh;
+            }
+
+            .parent{
+                background-color: #264653;
+            }
+
+            .child1{
+                background-color: #2a9d8f;
+            }
+
+            .child2{
+                background-color: #9e9a9a;
+            }
+
+            header{
+            background-color: white;
+            color:black; 
+            text-align: center;
+            width: 100%;
+            padding: 0%;
+            top:0;
+            }
+
+            footer {
+            background-color: #323031; 
+            color:rgb(241, 233, 233); 
+            text-align: center; 
+            padding: 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            }
+
+            .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+            background: #3B5998;
+            color: white;
+            }
+
+            .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
+
+            .fa-linkedin {
+            background: #007bb5;
+            color: white;
+            }
+
+            .fa-whatsapp{
+            background: #31b459;
+            color: white;
+            }
+
+
+            #Progress_Status { 
+            width: 100%; 
+            background-color: #ddd; 
+            } 
+            
+            #myprogressBar1 { 
+            width: 2%; 
+            height: 20px; 
+            background-color: #db3a34; 
+            } 
+
+            #myprogressBar2 { 
+            width: 2%; 
+            height: 20px; 
+            background-color: #db3a34; 
+            } 
+
+            #myprogressBar3 { 
+            width: 2%; 
+            height: 20px; 
+            background-color: #db3a34; 
+            } 
+
+            img {
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            }
+
+            .button-container-div {
+            text-align: center;
+            width: 70%;
+            margin:auto;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="parent" style="padding: 2% 5% 2% 5%;">
+            <div class="child1" style="padding: 2% 20% 2% 20%;" id="about">
+                <h1 style="text-align: center;">Tevin Mungai's Profile</h1>
+                <img src="images/tevin.jpg" alt="me">
+                <h2 style="text-align: center;">About</h2>
+                <p style="text-align: justify; line-height: 1.5em; font-size: 1.2em;">        
+                My name is Tevin Chege Mungai. A 24 year old Senior at United States International University-Africa. My major is 
+                Applied Computer Technology with a concentration in Software Engineering. I am currently interning at the 
+                Microsoft 4Afrika AppFactory at USIU-A. 
+                </p>
+
+            </div>
+
+            <div class="child2" style="padding: 0 20% 2% 20%;" id="skills">
+
+                <h2 style="text-align: center;">Skills</h2>
+                <ul>
+                    <li>HTML 5
+                        <div id="Progress_Status"> 
+                            <div id="myprogressBar1"></div> 
+                        </div> 
+                    </li>
+                    <li>JavaScript
+                        <div id="Progress_Status"> 
+                            <div id="myprogressBar2"></div> 
+                        </div> 
+                    </li>
+                    <li>C++
+                        <div id="Progress_Status"> 
+                            <div id="myprogressBar3"></div> 
+                        </div> 
+                    </li>
+                
+                </ul>
+                <div class="button-container-div">
+                    <button onclick="update1();update2();update3()">Check Proficiency</button>
+
+                </div>
+                 
+            </div>
+
+        </div>
+         
+  
+        <script> 
+        
+        function update1() { 
+        var element = document.getElementById("myprogressBar1");    
+        var width = 1; 
+        var identity = setInterval(scene, 10); 
+        function scene() { 
+            if (width >= 80) { 
+            clearInterval(identity); 
+            } else { 
+            width++;  
+            element.style.width = width + '%';  
+            } 
+        } 
+        } 
+
+        function update2() { 
+        var element = document.getElementById("myprogressBar2");    
+        var width = 1; 
+        var identity = setInterval(scene, 10); 
+        function scene() { 
+            if (width >= 50) { 
+            clearInterval(identity); 
+            } else { 
+            width++;  
+            element.style.width = width + '%';  
+            } 
+        } 
+        } 
+
+        function update3() { 
+        var element = document.getElementById("myprogressBar3");    
+        var width = 1; 
+        var identity = setInterval(scene, 10); 
+        function scene() { 
+            if (width >= 40) { 
+            clearInterval(identity); 
+            } else { 
+            width++;  
+            element.style.width = width + '%';  
+            } 
+        } 
+        } 
+        </script> 
+
+    </body>
+
+    <footer>
+        <h2>Contact Me</h2>
+
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-whatsapp"></a>
+
+    </footer>
+</html>
