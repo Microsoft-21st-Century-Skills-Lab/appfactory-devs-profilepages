@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeet Gohil</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    html,
+    body {
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Montserrat", sans-serif;
+    }
+    input[type=text], select, textarea {
+      width: 100%; 
+      padding: 12px; 
+      border: 1px solid #ccc; 
+      border-radius: 4px; 
+      box-sizing: border-box;
+      margin-top: 6px; 
+      margin-bottom: 16px; 
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: yellow;
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      transition: ease-out 0.3s;
+      background-color: yellowgreen;
+    }
+
+    .fab{
+      color: white;
+    }
+    .fab:hover{
+      color: yellow;
+      transition: ease-in 0.5s;
+    }
+  </style>
+  <body>
+    <div
+      style="
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        height: 100%;
+        background: url(/images/jeet-bg.jpg) center center no-repeat;
+        background-size: auto;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          top: 47%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        "
+      >
+        <h1 style="font-size: 3em; margin-top: 0;">Jeet Gohil</h1>
+        <hr style="width: 20%; background-color: yellow; border-color: yellow; height: 1px;" />
+        <p>Android & Web Developer</p>
+        <img
+          src="/images/Jeet.jpg"
+          alt=""
+          style="border-radius: 50%; width: 250px; height: 250px;"
+        />
+        <p style="font-family: 'Satisfy', cursive; font-size: 2em;">
+          Proudly Kenyan, Student and Achiever.
+        </p>
+        <a
+          href="#about-me"
+          style="
+            padding: 10px;
+            background-color: yellow;
+            border: none;
+            color: black;
+            text-decoration: none;
+          "
+        >
+          About Me
+        </a>
+        <a
+          href="#proj"
+          style="
+          margin-left: 10px;
+            padding: 10px;
+            background-color: yellow;
+            border: none;
+            color: black;
+            text-decoration: none;
+          "
+        >
+          Projects
+        </a>
+      </div>
+    </div>
+    <div style="padding: 0 20% 2% 20%;" id="about-me">
+      <h1 style="text-align: center;">About Me</h1>
+      <p style="text-align: justify; line-height: 1.5em; font-size: 1.2em;">
+        I am a dedicated, devoted, motivated and disciplined college senior in
+        pursuit of a Bachelor of Science Degree in Applied Computer Technology
+        in United States International University (Kenya). A firm believer of
+        encouraging the community and educating the underprivileged, I engage in
+        outreach programs to teach computer science to students in various
+        schools. I am always willing to learn. <br />
+        <br />Additionally, I engage myself in various technology related
+        activities such seminars and conferences. I enjoy watching movies and
+        going for short walks around my street.
+      </p>
+    </div>
+    <div
+      id="proj"
+      style="
+        padding: 3% 20% 2% 20%;
+        background-color: #151515;
+        color: #ecf0f1;
+        transition: ease-in 1s;
+      "
+    >
+      <button
+        onclick="changeTheme()"
+        style="
+        outline: none;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          font-size: 30px;
+          position: absolute;
+          left: 90%;
+        "
+      >
+        <i id="bulb-icon" class="fa fa-lightbulb" style="color: white;"></i>
+      </button>
+      <h1 id="proj-heading" style="text-align: center;">Projects</h1>
+      <div
+        id="proj-item"
+        style="
+          transition: ease-in 1s;
+          background-color: #202022;
+          padding: 1em;
+          border-radius: 3px;
+          margin-bottom: 20px;
+        "
+      >
+        <a
+          href="https://github.com/Jeetg57/License-Manager"
+          target="_blank"
+          style="text-decoration: none; color: #ecf0f1;"
+        >
+          <p style="letter-spacing: 3px; margin-bottom: 2px; font-size: 14px;">
+            PHP/MYSQL
+          </p>
+          <h1 style="margin-bottom: 0; margin-top: 0;">License Manager</h1>
+          <p>
+            A license manager software that encrypts and stores credit card and
+            license keys provided by an organization
+          </p>
+          <p>
+            <i class="fa fa-star" style="margin-right: 5px; color: yellow;"></i
+            >1,234
+          </p>
+        </a>
+      </div>
+      <div
+        id="proj-item"
+        style="
+          transition: ease-in 1s;
+          background-color: #202022;
+          padding: 1em;
+          border-radius: 3px;
+          margin-bottom: 20px;
+        "
+      >
+        <a
+          href="https://github.com/Jeetg57/MyInterests"
+          style="text-decoration: none; color: #ecf0f1;"
+          target="_blank"
+        >
+          <p style="letter-spacing: 3px; margin-bottom: 2px; font-size: 14px;">
+            JAVA (ANDROID)
+          </p>
+          <h1 style="margin-bottom: 0; margin-top: 0;">Interest Tracker</h1>
+          <p>
+            An app to locally store, delete and update interests
+          </p>
+          <p>
+            <i class="fa fa-star" style="margin-right: 5px; color: yellow;"></i
+            >1,423
+          </p>
+        </a>
+      </div>
+      <div
+        id="proj-item"
+        style="
+          transition: ease-in 1s;
+          background-color: #202022;
+          padding: 1em;
+          border-radius: 3px;
+          margin-bottom: 20px;
+        "
+      >
+        <a
+          href="https://github.com/Jeetg57/NoteTaker"
+          style="text-decoration: none; color: #ecf0f1;"
+          target="_blank"
+        >
+          <p style="letter-spacing: 3px; margin-bottom: 2px; font-size: 14px;">
+            JAVA (ANDROID)
+          </p>
+          <h1 style="margin-bottom: 0; margin-top: 0;">
+            Note Taker Android Application
+          </h1>
+          <p>
+            Simple Notes Application with update, delete, and add features
+          </p>
+          <p>
+            <i class="fas fa-star" style="margin-right: 5px; color: yellow;"></i
+            >1,423
+          </p>
+        </a>
+      </div>
+      <div
+        id="proj-item"
+        style="
+          transition: ease-in 1s;
+          background-color: #202022;
+          padding: 1em;
+          border-radius: 3px;
+          margin-bottom: 20px;
+        "
+      >
+        <a href="" style="text-decoration: none; color: #ecf0f1;" target="_blank"">
+          <p style="letter-spacing: 3px; margin-bottom: 2px; font-size: 14px;">
+            HTML/CSS/JS
+          </p>
+          <h1 style="margin-bottom: 0; margin-top: 0;">
+            Downy
+          </h1>
+          <p>
+            E-commerce HTML and CSS template
+          </p>
+          <p>
+            <i class="fas fa-star" style="margin-right: 5px; color: yellow;"></i
+            >2,413
+          </p>
+        </a>
+      </div>
+      <div
+        id="proj-item"
+        style="
+          transition: ease-in 1s;
+          background-color: #202022;
+          padding: 1em;
+          border-radius: 3px;
+          margin-bottom: 20px;
+        "
+      >
+        <a href="" style="text-decoration: none; color: #ecf0f1;">
+          <p style="letter-spacing: 3px; margin-bottom: 2px; font-size: 14px;">
+            HTML/CSS/JS/EXPRESS.JS
+          </p>
+          <h1 style="margin-bottom: 0; margin-top: 0;">
+            BashChat
+          </h1>
+          <p>
+            A website where chatting is done without interruptions
+          </p>
+          <p>
+            <i class="fas fa-star" style="margin-right: 5px; color: yellow;"></i
+            >3,413
+          </p>
+        </a>
+      </div>
+    </div>
+    <div style="padding: 5% 20% 5% 20%;">
+      <h1>Contact Me</h1>
+      <form>
+        <div>
+        <label for="Name">Name</label>
+        <input type="text">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text">
+      </div>
+      <div>
+        <label for="Age">Age</label>
+        <input type="text">
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea type="text" cols="50" rows="5"></textarea>
+      </div>
+      <input type="submit">
+      </form>
+    </div>
+    <footer style="background-color: #151515; color:white; text-align: center; padding: 40px 0 ;">
+      <h1>Jeet <span style="color: yellow; font-weight: bold;">Gohil</span></h1>
+      <hr style="color:white; background-color: white; width: 10%;">
+      <a href="#" style="text-decoration: none; font-size: 30px; padding-right: 20px;">
+        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+      </a>
+      <a href="#" style="text-decoration: none; font-size: 30px; padding-right: 20px;">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="#" style="text-decoration: none; font-size: 30px; padding-right: 20px;">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="#" style="text-decoration: none; font-size: 30px; padding-right: 20px;">
+        <i class="fab fa-codepen" aria-hidden="true"></i>
+      </a>
+      <a href="#" style="text-decoration: none; font-size: 30px; padding-right: 20px;">
+        <i class="fab fa-facebook-messenger" aria-hidden="true"></i>
+      </a>
+      <a href="#" style="text-decoration: none; font-size: 30px; padding-right: 20px;">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+      </a>
+      
+    </footer>
+    <script>
+      whichTheme();
+      function changeTheme() {
+        if (localStorage.getItem("theme") == 1) {
+          localStorage.setItem("theme", 2);
+          whichTheme();
+        } else {
+          localStorage.setItem("theme", 1);
+          whichTheme();
+        }
+      }
+
+      function whichTheme() {
+        if (!("theme" in localStorage)) {
+          localStorage.setItem("theme", 1);
+        }
+        if (localStorage.getItem("theme") == 1) {
+          document.getElementById("proj").style.backgroundColor = "#fff";
+          document.getElementById("proj-heading").style.color = "#000";
+          document.getElementById("bulb-icon").style.color = "#000";
+          document.querySelectorAll("[id=proj-item]").forEach((elem) => {
+            elem.style.backgroundColor = "#008080";
+          });
+        } else {
+          document.getElementById("proj").style.backgroundColor = "#151515";
+          document.getElementById("proj-heading").style.color = "#fff";
+          document.getElementById("bulb-icon").style.color = "#fff";
+          document.querySelectorAll("[id=proj-item]").forEach((elem) => {
+            elem.style.backgroundColor = "#202022";
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
