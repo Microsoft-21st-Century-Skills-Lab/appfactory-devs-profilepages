@@ -1,0 +1,38 @@
+body{
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+#container{
+    width: 100%;
+    min-height: 800px;
+    position: relative;
+}
+#main{
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    width: 60%;
+    min-height: 60%;
+    max-height: auto;
+    background: green;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    padding-top: 8%;
+    padding-bottom: 40px;
+}
+#profile_image{
+    position:absolute;
+    width: 16%;
+    left: 24%;
+    z-index: 2;
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.header1{
+    font-size: 1.4em;
+}
+.header2{
+    font-size: 1.3em;
+}

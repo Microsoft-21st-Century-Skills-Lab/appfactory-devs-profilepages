@@ -1,0 +1,51 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>This is a page</h1>
+        <h1>For testing</h1>
+        
+        <p>
+        <button onclick="date()">The time is ?</button>
+
+        <br>
+        <div style = "width: 100px; height: 80px; background: cyan" id = "color_block"></div>
+        <button onClick = "changeColor()">Change color</button>
+        
+        <br>
+        <h1 id = "title2">This is the title</h1>
+        <button onClick = "changeTitle2()">Change title</button>
+        </p>
+    </body>
+    <script>
+        function date(){
+            alert("The date is: " + Date());
+        }
+        function changeColor(){
+            var color = document.getElementById("color_block").style.background;
+
+            if (color == "cyan"){
+                color = "blue";
+            }else if (color == "blue"){
+                color = "cyan";
+            }
+
+            document.getElementById("color_block").style.background = color;
+        }
+
+        function changeTitle2(){
+            
+            var title2 = "no the above is the title";
+            var title1 = "This is the title"
+            title = document.getElementById("title2").innerHTML;
+
+            if (title == title1){
+                document.getElementById("title2").innerHTML = title2;
+            }else{
+                document.getElementById("title2").innerHTML = title1;
+            }
+
+        }
+    </script>
+</html>
