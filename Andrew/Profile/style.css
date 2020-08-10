@@ -6,19 +6,28 @@ body{
     min-height: 800px;
     position: relative;
 }
-#main{
-    position: absolute;
+#container:hover > #profile_image{
+    border-color: #bfbcb2;
+}
+#container:hover > .main{
+    border-color: #e3e0d8;
+}
+.main{
+    position: relative;
     left: 20%;
-    top: 100px;
     width: 60%;
-    min-height: 60%;
+    margin-top: 20px;
     max-height: auto;
-    background: green;
-    border-width: 2px;
-    border-color: black;
+    border-width: 4px;
+    background-color: #ade342;
+    border-color: #639e4c;
     border-style: solid;
+    border-radius: 8px;
     padding-top: 8%;
-    padding-bottom: 40px;
+    padding-bottom: 8%;
+}
+.main:hover{
+    background-color: #99c936;
 }
 #profile_image{
     position:absolute;
@@ -26,8 +35,8 @@ body{
     left: 24%;
     z-index: 2;
     border-radius: 50%;
-    border-width: 1px;
-    border-color: black;
+    border-width: 4px;
+    border-color: #78766f;
     border-style: solid;
 }
 .header1{
