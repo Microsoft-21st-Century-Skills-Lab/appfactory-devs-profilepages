@@ -2,27 +2,56 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="5">
+    <meta http-equiv="refresh" content="10">
 
     <style >
-        body{
-          height: 100%;
+    body{
           margin: 0 0 0 0;
-          background-color: #ffb31a; //gold
+          padding: 0;
+          background-color: #ffb31a;
+
         }
+
+        <!-- first color #01a5ed second color #ffb31a -->
+
 
         h1,p{
           color: white;
           font-size: xx-large;
         }
         .header{
-        background-color: #bfbfbf; //soft grey
+            background-color: #01a5ed; //soft grey
         }
+        /* .tag_animate{
+          top: 5px;
+          left: 15px;
+          height: 20px;
+          width: 20px;
+          flex-grow: 1;
+
+        } */
+        /* #tags{
+
+
+          animation: dots 2s ease 0s infinite ;
+
+        }
+
+        @keyframes dots {
+          from{
+
+          }
+          to{
+
+          }
+        } */
+
+
         .navbar{
           display: flex;
           justify-content: flex-end;
           flex-flow: row wrap;
-          background-color: #01a5ed; //soft blue
+          background-color: inherit; //soft blue
           overlay: hidden;
         }
         .navbar a{
@@ -34,39 +63,46 @@
           color: #050507;  //dark blue
           text-decoration: none;
         }
-<!-- second color #ffb31a -->
 
         .navbar a:hover{
-          background-color: #bfbfbf;  //soft grey
+          background: #bfbfbf;  //soft grey
         }
         #firstflex{
           display: flex;
-          background-color: #01a5ed;  //soft blue
           flex-flow: row nowrap;
           min-height: 700px;
-          margin-top: 0.6em;
+          margin-top: 0.2em;
           width: auto;
-          justify-content: space-around;
-
-
-        }
-        firstflex>div:nth-child(1){
+          justify-content: center;
+          align-items: baseline;
           background-color: #01a5ed;  //soft blue
-          flex-basis: auto;
-          flex-grow: 2
-
         }
-        firstflex>div:nth-child(3){
-          /* background-color: #01a5ed  //soft blue */
-          width: 400px;
+        .aside1{
+          order: 1;
+          flex-basis: auto;
+          align-self: stretch;
           flex-grow: 1;
-          background-color: #bfbfbf; //soft grey
 
         }
-        firstflex>div:nth-child(3){
-          background-color: #01a5ed  //soft blue
+        .image{
+          order: 2;
+          background-image: url("images/workspace.webp");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 400px;
+          width: 100px;
+          filter: drop-shadow(0px 3px 5px #ff8c00);
+          filter: blur(4px);
+          align-content: center;
+          align-self: center;
+          flex-grow: 1;
+        }
+        .aside2{
+          order: 3;
           flex-basis: auto;
-          flex-grow: 2;
+          align-self: stretch;
+          flex-grow: 1;
         }
         .parallax{
           background-image: url("images/StudentCentre.gif");
@@ -75,8 +111,48 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
+
           filter: blur(4px);
         }
+        .secondflex{
+          display: flex;
+          flex-flow: row nowrap;
+          min-height: 500px;
+          margin-top: 0.1em;
+          width: auto;
+          justify-content: space-between;
+          align-items: stretch;
+        }
+
+        .mentor{
+          flex-grow: 1;
+          width: 30%;
+          padding: 5px 10px 5px 10px;
+          margin: 0px 10px 0px 10px;
+          border: 2px solid black;
+          border-style: solid solid solid none;
+        }
+        .cohort{
+          flex-grow: 3;
+          float: right;
+          width: 60%;
+          padding: 5px 10px 5px 10px;
+          margin: 0px 10px 0px 10px;
+          border: 2px solid black;
+          border-style: solid none solid solid;
+
+        }
+        .footer{
+          background-color: #01a5ed;  //soft blue
+          height: 80px;
+          width: 100%;
+          padding: 20px 20px;
+          box-sizing: border-box;
+          position: relative;
+
+
+        }
+
 
 
 
@@ -92,6 +168,7 @@
 
 <div class="header">
       <div class="navbar">
+
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Current Cohort</a>
@@ -100,19 +177,34 @@
       </div>
 </div>
 <div id="firstflex">
-      <div >
+      <aside class="aside1">
+      </aside>
+      <div class="image" >
+
 
       </div>
-      <div >
-
-      </div>
-      <div >
-
-      </div>
+      <aside class="aside2">
+      </aside>
 </div>
 
 <div class="parallax">
 
+</div>
+<h1>Current Cohort Summer 2020</h1>
+<div class="secondflex">
+
+  <aside class="mentor">
+    currently the only living soul to know what a dolphin is thinking is not availablefor comment.
+
+  </aside>
+  <br>
+  <div class="cohort">
+  </div>
+
+</div>
+<br>
+<div class="footer">
+  Copyright (c) 2020 Copyright Holder All Rights Reserved.
 </div>
 
 
