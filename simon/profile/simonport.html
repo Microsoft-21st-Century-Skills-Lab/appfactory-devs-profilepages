@@ -1,150 +1,218 @@
-<!DOCTYPE html>
++<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="15">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <style>
+      body{
+        font-family: 'Dancing Script', cursive;;
 
-    <style>
-    /* *, *:before, *:after {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-     } */
-body{
-      margin-top: 0%;
-      min-height:100%;
-      background-color: black
-
-    }
-h1,h2,h3,a{
-      color: white
-    }
-
-div>h1{
-      min-width: 250px;
-      transform:rotate(270deg);
-      transform-origin:0 0;
-
-    }
-.logo {
-
-      width:200px;
-      height: 200px;
-      border-radius:500px;
-      border: solid black;
-      transform:rotate(0deg);
-      transition: 5s;
-    }
-img:hover{
-      transform: rotate(360deg);
-    }
-
-#centre {
-        width: 20%;
-        height: 10%;
-        position: absolute;
-        margin: auto;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
+            margin-top: 1%;
+            min-height:100%;
+            background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+            /* background: #283048;  /* fallback for old browsers // titanium
+            background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6
+            background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
       }
-#author{
+      h1,h2,h3,a{
+            color: #e07059;
+            text-decoration: none;
 
+      }
+
+
+      .logo {
+            width:200px;
+            height: 200px;
+            border-radius:500px;
+            border: solid black;
+            transform:rotate(0deg);
+            transition: 5s;
+      }
+      img:hover{
+            transform: rotate(360deg);
+      }
+
+      .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 250px;
+      }
+
+      .popupform{
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+
+      }
+      .popupcontainer{
+        max-width: 400px;
+        padding: 10px;
+        background-color: teal;
+
+
+      }
+
+      .centre>h1{
+        /* min-width: 250px; */
+        transform:rotate(330deg);
+        transform-origin: -1 0;
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 2px 2px 2px #00001;
+        text-size: large;
+      }
+
+      .centre {
+
+        padding-left: 30px;
+        margin: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        flex-grow: 1;
+
+      }
+
+
+      #author{
+        padding-right: 30px;
+        padding-top: 100px;
+        font-size: large;
+        flex-grow: 0;
+
+
+      }
+      .stack{
+        min-height: 400px;
+        margin-top: 30px;
+
+      }
+      .project{
+        display: flex;
+        flex-flow: row nowrap;
+        min-height: 500px;
+        margin-top: 0.1em;
         width: auto;
-        height: auto;
-        position: absolute;
-        margin: auto;
-        left: 80%;
-        right: 0;
-        top: 40%;
-        bottom: 0;
-          font-size: large;
+        justify-content: space-between;
+        align-items: stretch;
       }
-#first{
-  width:50px;
-  min-height: 200px;
-  position: absolute;
-  border: 2px;
-  padding: 15px;
-  left: 0%;
-  font-size: large;
-  display: inline-block;
-  border-style: solid;
-  border-color:#ffffff;
-}
-#second{
-  width:50px;
-  height: 350px;
-  position: absolute;
-  border: 2px solid ;
-  padding: 15px;
-  left: 32.5%;
-  font-size: large;
-  display: inline-block;
-  border-style: solid;
-  border-color:#ffffff;
-}
-#third{
-  width:50px;
-  min-height: 200px;
-  position: absolute;
-  border: 2px solid ;
-  padding: 15px;
-  left: 65%;
-  font-size: large;
-  display: inline-block;
-  border-style: solid;
-  border-color:#ffffff;
-}
-    </style>
+      .project>div:nth-child(1){
+        flex-grow: 1;
+        width: 30%;
+        padding: 5px 10px 5px 10px;
+        margin: 10px 10px 10px 10px;
+        border: 2px solid black;
+        border-style: solid none solid none;
+      }
+      .project>div:nth-child(2){
+        flex-grow: 1;
+        float: right;
+        width: 30%;
+        padding: 5px 10px 5px 10px;
+        margin: 10px 10px 10px 10px;
+        border: 2px solid black;
+        border-style: solid none solid none;
+      }
+      .project>div:nth-child(3){
+        flex-grow: 1;
+        float: right;
+        width: 30%;
+        padding: 5px 10px 5px 10px;
+        margin: 10px 10px 10px 10px;
+        border: 2px solid black;
+        border-style: solid none solid none;
+      }
+      .footer{
+        height: 80px;
+        width: 100%;
+        padding: 30px 10px;
+        box-sizing: border-box;
+        position: relative;
+        text-align: center;
+      }
+
+  </style>
 
 
-    <title>Simon Portfolio</title>
+      <title>Simon Portfolio</title>
   </head>
 
 
   <body>
-    <a href="#">
-      <img class="logo" src="simonlogo.jpg" alt="">
-    </a>
 
+  <a href="simonport.html">
+  <img class="logo" src="images/simonlogo.jpg" alt="logo">
+  </a>
 
-    <section id="centre">
-      <div id="first">
-        <h1>Creative</h1>
+  <div class="wrap">
+    <div class="centre">
+      <h1>Creative</h1>
+      <h1>Software</h1>
+      <h1>Design</h1>
 
+    </div>
 
-      </div>
-      <div id="second">
-        <h1>Front-End</h1>
-
-
-      </div>
-      <div id="third">
-        <h1>Design</h1>
-
-
-      </div>
-
-    </section>
-
-
-      <section id="author">
+    <section id="author">
+      <div class="">
         <h1>
-          <span style="color: white">Simon</span>
-          <span style="color: #bb7659">M.</span>
-          <span style="color: white">Wazome</span>
+          <span >Simon</span>
+          <span style="color: #00001;">M.</span>
+          <span style="color: #00001;">Wazome</span>
         </h1>
-          <h3>Software Engineer</h3>
-          <a href="#new-hero">
-                      Contact Me</a>
-      </section>
+        <h3>Software Engineer</h3>
+        <p class="popup" id="contact" onclick="openform()">Contact Me </p>
 
+        <div class="popupform" id="contactform">
+          <form class="popupcontainer" action="#" method="post">
+            <input type="text" placeholder="Enter Full Name" name="fullname" required>
 
+            <input type="email" name="email" placeholder="Enter Email" >
+  or
+            <input type="textarea" name="msg" placeholder="Leave A Message...">
 
+            <button type="submit" class="button">Send</button>
+            <button type="button" class="button cancel">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="stack">
 
+  </div>
+  <div class="project">
+    <div class="">
 
+    </div>
+    <div class="">
 
+    </div>
+    <div class="">
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Copyright (c) 2020 Simon D All Rights Reserved.
+  </div>
+  <script type="text/javascript">
+    function openform(){
+      document.getElementById("contactform").style.display="block";
+    }
+    function openform(){
+      document.getElementById("contactform").style.display="none";
+    }
+
+      document.getElementById("contact").onclick= function({openform()});
+
+  </script>
   </body>
 </html>
