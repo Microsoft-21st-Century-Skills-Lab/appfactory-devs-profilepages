@@ -5,11 +5,10 @@
     <meta http-equiv="refresh" content="10">
 
     <style >
-    body{
+        body{
           margin: 0 0 0 0;
           padding: 0;
           background-color: #ffb31a;
-
         }
 
         <!-- first color #01a5ed second color #ffb31a -->
@@ -20,8 +19,11 @@
           font-size: xx-large;
         }
         .header{
-            background-color: #01a5ed; //soft grey
-        }
+          display: flex;
+          justify-content: flex-start;
+          flex-flow: row wrap;
+          background-color: #01a5ed; //soft blue
+          overlay: hidden;        }
         /* .tag_animate{
           top: 5px;
           left: 15px;
@@ -45,9 +47,20 @@
 
           }
         } */
+        .name{
+          flex-grow: 1;
+          display: block;
+          text-align: center;
+          font-size: x-large;
+          padding: 15px 20px;
+          color: #050507;  //dark blue
+          text-font: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+          text-size: large;
+          text-decoration: none;
 
-
+        }
         .navbar{
+          flex-grow: 3;
           display: flex;
           justify-content: flex-end;
           flex-flow: row wrap;
@@ -55,54 +68,75 @@
           overlay: hidden;
         }
         .navbar a{
-
           display: block;
           text-align: center;
           font-size: 20px;
-          padding: 20px 20px;
+          padding: 20px 35px;
           color: #050507;  //dark blue
           text-decoration: none;
         }
-
         .navbar a:hover{
           background: #bfbfbf;  //soft grey
         }
-        #firstflex{
+        .firstflex{
           display: flex;
-          flex-flow: row nowrap;
-          min-height: 700px;
+          flex-flow: column nowrap;
+          min-width: 700px;
           margin-top: 0.2em;
-          width: auto;
-          justify-content: center;
           align-items: baseline;
           background-color: #01a5ed;  //soft blue
         }
         .aside1{
           order: 1;
           flex-basis: auto;
-          align-self: stretch;
-          flex-grow: 1;
-
-        }
-        .image{
-          order: 2;
+          align-self: center;
+          flex-grow: 3;
+          min-height: 600px;
+          min-width: 700px;
+          border: 2px solid black;
           background-image: url("images/workspace.webp");
-          background-position: center;
           background-repeat: no-repeat;
+          background-position: center;
           background-size: cover;
+          filter: blur(4px);
+        }
+        .workspace{
+
           height: 400px;
           width: 100px;
           filter: drop-shadow(0px 3px 5px #ff8c00);
           filter: blur(4px);
           align-content: center;
           align-self: center;
-          flex-grow: 1;
+          /* flex-grow: 2; */
         }
+
         .aside2{
-          order: 3;
+          order: 2;
           flex-basis: auto;
-          align-self: stretch;
+          align-self: center;
           flex-grow: 1;
+          min-height: 100px;
+          width: auto;
+          border: 2px solid black;
+        }
+        .logo{
+          height: 70px;
+          weight: 70px;
+          bottom: 0;
+          left: 0;
+          padding: 10px 60px;
+          position: relative;
+          -ms-wrap-flow: both;
+        }
+        .logo2{
+          height: 70px;
+          weight: 70px;
+          bottom: 0;
+          right: 0;
+          padding: 10px 60px;
+          position: relative;
+          -ms-wrap-flow: both;
         }
         .parallax{
           background-image: url("images/StudentCentre.gif");
@@ -111,7 +145,6 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-
           filter: blur(4px);
         }
         .secondflex{
@@ -123,14 +156,48 @@
           justify-content: space-between;
           align-items: stretch;
         }
-
         .mentor{
+
           flex-grow: 1;
           width: 30%;
           padding: 5px 10px 5px 10px;
           margin: 0px 10px 0px 10px;
           border: 2px solid black;
           border-style: solid solid solid none;
+        }
+        .row{
+          margin: 8px -16px;
+        }
+        .row, .row>.column{
+          padding: 8px;
+        }
+
+        .column{
+        float: left;
+        width: 25%;
+        }
+        .row::after{
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .content{
+          background-color: white;
+        }
+        .mentor_pic{
+          width: 200px;
+        }
+        .cohort_pic1{
+          width:  200px;
+        }
+        .cohort_pic2{
+          width:  200px;
+        }
+        .cohort_pic3{
+          width:  200px;
+        }
+        .cohort_pic4{
+          width:  200px;
         }
         .cohort{
           flex-grow: 3;
@@ -149,8 +216,6 @@
           padding: 20px 20px;
           box-sizing: border-box;
           position: relative;
-
-
         }
 
 
@@ -160,53 +225,105 @@
     <title>AppFactory</title>
   </head>
 
-
   <body>
-<div class="">
-
-
-
-<div class="header">
-      <div class="navbar">
-
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Current Cohort</a>
-        <a href="#">Contact</a>
-        <a href="#">Developers</a>
+    <div id="home">
+      <div class="header">
+        <div >
+          <a class="name" href="AppFactory_Main.html" >Microsoft 21st Centuary Skills Lab</a>
+        </div>
+        <div class="navbar">
+            <a href="#about" >About</a>
+            <a href="#cohort" >Current Cohort</a>
+            <a href="#" >Contact</a>
+            <a href="#" >Developers</a>
+        </div>
       </div>
-</div>
-<div id="firstflex">
-      <aside class="aside1">
-      </aside>
-      <div class="image" >
 
+      <div class="firstflex">
+
+        <aside class="aside1">
+
+
+
+        </aside>
+
+        <aside class="aside2">
+          <img class ="logo" src="images/mslogo.jpg" alt="Microsoft Logo">
+
+          <img class ="logo2" src="images/usiu-logo.jpg" alt="USIU Logo">
+
+        </aside>
+
+        </div>
 
       </div>
-      <aside class="aside2">
-      </aside>
-</div>
+      <div id="about" class="parallax">
+        <section>
+          <h1>About The Program</h1>
+          <p>ckhcuk  utfu tf tf8 fp8tftvlu tftu 8tft tfct t tftictic ftct f;itfhvlj jgjgc  ugcvjgv g jggvu uvucutclgu  ugclugvjgc ugculgclu cucucluclo  lilutcyrx kugc ykxte bjvhfyfxy yfxufrxkyr  yfcyfx yyfckyfx kyx y xyxkyfx kyfcyfxkyfxy yfxkyfx </p>
 
-<div class="parallax">
+        </section>
 
-</div>
-<h1>Current Cohort Summer 2020</h1>
-<div class="secondflex">
+      </div>
+      <h1>Current Cohort Summer 2020</h1>
+      <div id="cohort" class="secondflex">
+        <div class="mentor">
+          <h1>Mentor</h1>
+          <div class="row">
+            <div class="column">
+              <div class="content">
+                <img class="mentor_pic" src="images/undraw_feeling.png" alt="mentor_pic">
+                <h3>Sebastian Opio</h3>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <aside class="mentor">
-    currently the only living soul to know what a dolphin is thinking is not availablefor comment.
+        <br>
 
-  </aside>
-  <br>
-  <div class="cohort">
-  </div>
+        <div class="cohort">
+          <h1>Current Cohort</h1>
 
-</div>
-<br>
-<div class="footer">
-  Copyright (c) 2020 Copyright Holder All Rights Reserved.
-</div>
+          <div class="row">
+            <div class="column">
+              <div class="content">
+                <img class="cohort_pic1" src="images/undraw_dev.png" alt="cohort_pic1">
+                <h3>Muthoni </h3>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="content">
+                <img class="cohort_pic2" src="images/undraw_developer.png" alt="cohort_pic2">
+                <h3>Tevin Mungai</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <div class="content">
+                <img class="cohort_pic3" src="images/undraw_web_developer.png" alt="cohort_pic3">
+                <h3>Simon </h3>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="content">
+                <img class="cohort_pic4" src="images/undraw_version.png" alt="cohort_pic4">
+                <h3>Andrew </h3>
+              </div>
+            </div>
+
+          </div>
 
 
+        </div>
+      </div>
+      <br>
+      <div class="footer">
+        Copyright (c) 2020 Copyright Holder All Rights Reserved.
+      </div>
+    </div>
   </body>
 </html>
