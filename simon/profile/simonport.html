@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="15">
+  <meta http-equiv="refresh" content="40">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <style>
       body{
@@ -17,9 +17,11 @@
 
       }
       h1,h2,h3,a{
-            color: #e07059;
-            text-decoration: none;
+            color: #f8cac6;
 
+      }
+      h2{
+        text-decoration: underline;
       }
 
 
@@ -129,6 +131,7 @@
         border: 2px solid black;
         border-style: solid none solid none;
       }
+
       .footer{
         height: 80px;
         width: 100%;
@@ -167,14 +170,14 @@
           <span style="color: #00001;">Wazome</span>
         </h1>
         <h3>Software Engineer</h3>
-        <p class="popup" id="contact" onclick="openform()">Contact Me </p>
+        <button type="button" name="button" class="popup" id="contact" onclick="openform()">Contact Me</button>
 
         <div class="popupform" id="contactform">
           <form class="popupcontainer" action="#" method="post">
             <input type="text" placeholder="Enter Full Name" name="fullname" required>
 
             <input type="email" name="email" placeholder="Enter Email" >
-  or
+
             <input type="textarea" name="msg" placeholder="Leave A Message...">
 
             <button type="submit" class="button">Send</button>
@@ -185,17 +188,74 @@
     </section>
   </div>
   <div class="stack">
+    <div class="row">
+      <div class="column">
+        <div class="content">
 
+          <h3></h3>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+
+          <h3></h3>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="content">
+
+          <h3></h3>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+
+          <h3></h3>
+        </div>
+      </div>
+    </div>
   </div>
+
   <div class="project">
-    <div class="">
+    <img src="images/languages.gif" alt="languages">
 
-    </div>
-    <div class="">
+    <div class="row">
+      <h2 >Previous and Current Projects</h2>
+      <br>
+      <br>
+      <div class="column">
+        <div class="content">
 
-    </div>
-    <div class="">
+          <h3>Traffic Accident Prevention App</h3>
+        </div>
+      </div>
+      <br>
 
+      <div class="column">
+        <div class="content">
+
+          <h3>DialogFlow Twitter Intergration</h3>
+        </div>
+      </div>
+      <br>
+
+      <div class="column">
+        <div class="content">
+
+          <h3>Chatbot with Python</h3>
+        </div>
+      </div>
     </div>
 
   </div>
